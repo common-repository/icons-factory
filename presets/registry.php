@@ -1,0 +1,462 @@
+<?php
+
+/* https://svgsprite.com */
+
+if (!defined('ABSPATH')) {die( '-1' );}
+
+return array (
+  'MY' =>
+  array (
+    'Test' =>
+    array (
+      'id' => 'ic_other_lamp',
+      'color_map' => 'g3:#7b1fa2|4;2:#795548',
+      'fx_doodle' => 'true',
+      'fx_doodle_color' => '#7b1fa2',
+      'image_compos' => '1',
+      'image_transform' => '110,0,0',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'Test2' =>
+    array (
+      'id' => 'ic_data_profiles-1',
+      'color_map' => 'g2:#ffd9e6|3:#f8bbd0|4:#ed9db9',
+      'bg_shape' => 'true',
+      'bg_shape_color' => '#fce4ec',
+      'bg_shape_size' => 90,
+      'preview_color' => 'rgba(255,255,255,1)',
+    )
+  ),
+  'BASE' =>
+  array (
+	'VBZ' =>
+    array (
+      'id' => 'ic_people-09',
+      'dir' => '03_6r24u3gpth40',
+      'color_map' => 'g1:#ffffff|3:#e91e63|4:#7b1fa2',
+      'fx_doodle' => 'true',
+      'fx_doodle_width' => '2',
+      'fx_doodle_color' => '#000000',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'blob',
+      'bg_shape_color' => '#f3e5f5',
+      'bg_shape_outline_color' => '#000000',
+      'bg_shape_size' => 98,
+      'bg_shape_mask' => 'true',
+      'image_transform' => '130,1,-18',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'SPR' =>
+    array (
+      'id' => 'ic_people-24',
+      'dir' => '03_6r24u3gpth40',
+      'color_map' => 'g1:#ffffff|3:#e91e63|4:#7b1fa2',
+      'fx_doodle' => 'true',
+      'fx_doodle_width' => '2',
+      'fx_doodle_color' => '#000000',
+      'fx_sticker' => 'true',
+      'fx_sticker_width' => 16,
+      'fx_sticker_color' => '#ffffff',
+      'fx_sticker_shadow_size' => '4',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'blob',
+      'bg_shape_color' => '#ffb300',
+      'bg_shape_outline_color' => '#000000',
+      'bg_shape_size' => 80,
+      'image_transform' => '127,2,2',
+      'preview_color' => 'rgba(255,193,7,1)',
+    ),
+    'EXO' =>
+    array (
+      'id' => 'ic_characters_eye-patch',
+      'color_map' => 'g2:#ffffff|3;4:#795548',
+      'fx_doodle' => 'true',
+      'fx_doodle_width' => 7,
+      'fx_sticker' => 'true',
+      'fx_sticker_color' => '#ffffff',
+      'fx_sticker_shadow_color' => '#f57f17',
+      'fx_sticker_shadow_size' => '3',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'fingerprint',
+      'overlay' => '2',
+      'image_compos' => '1',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'MOK' =>
+    array (
+      'id' => 'ic_money_half-price-1',
+      'color_map' => 'g1:#424242|2:#212121',
+      'animation' => 'each_zoom_spring',
+      'overlay' => '2',
+      'image_transform' => '130,0,0',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'WLL' =>
+    array (
+      'id' => 'ic_letters_w',
+      'color_map' => 'g3:#424242|4:#212121',
+      'fx_sticker' => 'true',
+      'fx_sticker_width' => 70,
+      'fx_sticker_color' => '#ffffff',
+      'fx_sticker_shadow_size' => '4',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'brick-wall',
+      'bg_shape_color' => '#1de9b6',
+      'overlay' => '2',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'NEO' =>
+    array (
+      'id' => 'ic_communication_mail',
+      'color_map' => 'g2:#64ffda|3:#262626|4:#000000',
+      'fx_sticker' => 'true',
+      'fx_sticker_width' => 20,
+      'fx_sticker_color' => '#64ffda',
+      'fx_sticker_shadow_color' => '#e0f2f1',
+      'fx_sticker_shadow_size' => '4',
+      'image_transform' => '115,0,0',
+      'preview_color' => 'rgba(0,0,0,1)',
+    ),
+    'LUM' =>
+    array (
+      'id' => 'ic_other_lamp',
+      'color_map' => 'g3:#0066ff|4:#0037ff',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'perfect-circle',
+      'bg_shape_color' => '#ffd3de',
+      'bg_shape_outline_color' => '#ffffff',
+      'bg_shape_outline' => 3,
+      'bg_shape_size' => 80,
+      'preview_color' => 'rgba(255,211,222,1)',
+    ),
+    'BRU' =>
+    array (
+      'id' => 'ic_other_brainstorming-1',
+      'color_map' => 'g3:#000000|4:#ffffff',
+      'image_compos' => '1',
+      'preview_color' => 'rgba(9,33,243,1)',
+    ),
+    'VIO' =>
+    array (
+      'id' => 'ic_other_magnifier',
+      'color_map' => 'g3;4:#4a148c',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'rounded-square',
+      'bg_shape_color' => '#9c27b0',
+      'bg_shape_size' => 85,
+      'bg_shape_mask' => 'true',
+      'image_transform' => '140,-5,-13',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'ELG' =>
+    array (
+      'id' => 'ic_other_table-lamp',
+      'color_map' => 'g3;2;1;4:#2962ff',
+      'fx_doodle' => 'true',
+      'fx_doodle_width' => 3,
+      'fx_doodle_color' => '#ffffff',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'perfect-circle',
+      'bg_shape_color' => '#2962ff',
+      'bg_shape_outline_color' => '#ffffff',
+      'bg_shape_outline' => 1,
+      'bg_shape_size' => 90,
+      'image_compos' => '1',
+      'preview_color' => 'rgba(41,98,255,1)',
+    ),
+    'DIS' =>
+    array (
+      'id' => 'ic_data_percentage',
+      'color_map' => 'g3;4:#fbc02d',
+      'fx_doodle' => 'true',
+      'fx_doodle_width' => 8,
+      'fx_doodle_color' => '#000000',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'brush-stroke',
+      'bg_shape_size' => 90,
+      'image_compos' => '1',
+      'image_transform' => '110,0,0',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'PEN' =>
+    array (
+      'id' => 'ic_other_brainstorming-1',
+      'color_map' => 'g0;1;2;3;4:#ffffff',
+      'fx_doodle' => 'true',
+      'fx_doodle_width' => 7,
+      'fx_doodle_color' => '#0044ff',
+      'fx_sticker' => 'true',
+      'fx_sticker_color' => '#ffffff',
+      'image_compos' => '1',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'BRO' =>
+    array (
+      'id' => 'ic_other_divider-compass',
+      'color_map' => 'g3:#ff5722|4:#e64a19|1;2:#000000',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'blob',
+      'bg_shape_color' => '#efebe9',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'BW' =>
+    array (
+      'color_map' => 'g3;4;2;1:#fff',
+      'fx_doodle' => 'true',
+      'fx_doodle_width' => 2,
+      'fx_doodle_color' => '#212121',
+      'fx_sticker' => 'true',
+      'fx_sticker_width' => 16,
+      'fx_sticker_color' => '#212121',
+      'fx_sticker_shadow_size' => '4',
+      'image_compos' => '1',
+      'image_transform' => '120,0,0',
+      'preview_color' => 'rgba(255,255,255,1)',
+      'id' => 'ic_data_business-bag',
+    ),
+    'ALR' =>
+    array (
+      'id' => 'ic_communication_mail',
+      'color_map' => 'g3:#ff3d00|4:#dd2c00',
+      'fx_sticker' => 'true',
+      'fx_sticker_color' => '#ffffff',
+      'fx_sticker_shadow_size' => '4',
+      'preview_color' => 'rgba(255,61,0,1)',
+    ),
+    'AWW' =>
+    array (
+      'id' => 'ic_time_award-five-years',
+      'color_map' => 'g1:#ffffff|0;4;3:#000000',
+      'fx_btm_shadow' => 'true',
+      'fx_btm_shadow_color' => '#ffb300',
+      'fx_sparks' => 'true',
+      'fx_sparks_anim' => 'true',
+      'image_transform' => '100,0,3',
+      'preview_color' => 'rgba(255,193,7,1)',
+    ),
+    'GUN' =>
+    array (
+      'color_map' => 'g0;1;2;3;4:#ffffff',
+      'preview_color' => 'rgba(0,0,0,1)',
+      'id' => 'ic_other_revolver',
+    ),
+    'MAG' =>
+    array (
+      'color_map' => 'g3:#2979ff|4:#2962ff|1;2:#000000',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'brush-stroke',
+      'bg_shape_brush_comp' => '3',
+      'bg_shape_color' => '#ffffff',
+      'bg_shape_outline_color' => '#e0e0e0',
+      'bg_shape_outline' => 2,
+      'bg_shape_size' => 90,
+      'image_transform' => '110,0,0',
+      'preview_color' => 'rgba(255,255,255,1)',
+      'id' => 'ic_other_tree',
+    ),
+    'COD' =>
+    array (
+      'color_map' => 'g3:#607d8b|4:#546e7a',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'hexagon',
+      'bg_shape_color' => '#eceff1',
+      'bg_shape_size' => 90,
+      'bg_shape_dst' => 'true',
+      'bg_shape_dst_seed' => 4,
+      'bg_shape_dst_lvl' => '3',
+      'overlay' => '1',
+      'preview_color' => 'rgba(255,255,255,1)',
+      'id' => 'ic_data_doc-edit-2',
+    ),
+    'FLY' =>
+    array (
+      'id' => 'ic_communication_mails',
+      'color_map' => 'g2:#9c27b0|3:#6a1b9a|4:#263238',
+      'animation' => 'each_zoom_spring',
+      'bg_shape' => 'true',
+      'bg_shape_color' => '#eceff1',
+      'bg_shape_size' => '90',
+      'bg_shape_dst' => 'true',
+      'bg_shape_dst_seed' => '2',
+      'bg_shape_dst_lvl' => '3',
+      'image_transform' => '130,0,0',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'BNG' =>
+    array (
+      'color_map' => 'g0;1;2;3:#000000',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'brush-stroke',
+      'bg_shape_brush_comp' => '2',
+      'bg_shape_color' => '#00ff84',
+      'bg_shape_size' => 80,
+      'image_compos' => '1',
+      'image_transform' => '95,0,9',
+      'preview_color' => 'rgba(255,255,255,1)',
+      'id' => 'ic_other_bomb',
+    ),
+    'DOC' =>
+    array (
+      'id' => 'ic_characters_old-scientist',
+      'color_map' => 'g3:#795548|4:#6d4c41',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'hexagon',
+      'bg_shape_color' => '#03a9f4',
+      'bg_shape_mask' => 'true',
+      'overlay' => '2',
+      'image_transform' => '139,0,-11',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'OUL' =>
+    array (
+      'id' => 'ic_money_money-bag',
+      'color_map' => 'g1;3;4:#e91e63',
+      'fx_doodle' => 'true',
+      'fx_doodle_width' => 8,
+      'fx_doodle_color' => '#ffffff',
+      'image_compos' => '1',
+      'image_transform' => '110,0,0',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'LIN' =>
+    array (
+      'id' => 'ic_other_fingers',
+      'color_map' => 'g1;3;2;4:#8bc34a',
+      'fx_doodle' => 'true',
+      'fx_doodle_color' => '#ffffff',
+      'fx_sticker' => 'true',
+      'fx_sticker_color' => '#8bc34a',
+      'fx_sticker_shadow_color' => '#558b2f',
+      'fx_sticker_shadow_size' => '2',
+      'image_compos' => '1',
+      'image_transform' => '90,0,0',
+      'preview_color' => 'rgba(139,195,74,1)',
+    ),
+    'AQU' =>
+    array (
+      'color_map' => 'g2:#efebe9|3:#ff7043|4:#f4511e',
+      'fx_btm_shadow' => 'true',
+      'fx_btm_shadow_color' => 'rgba(245, 126, 22, 0.51)',
+      'fx_sparks' => 'true',
+      'fx_sparks_variant' => '3',
+      'fx_sparks_anim' => 'true',
+      'overlay' => '1',
+      'preview_color' => 'rgba(251,192,45,1)',
+      'id' => 'ic_digital-tech_online-store-1',
+    ),
+    'DIA' =>
+    array (
+      'id' => 'ic_data_chart-80-20',
+      'color_map' => 'g3:#9c27b0|4:#7b1fa2',
+      'image_transform' => '120,0,0',
+      'preview_color' => 'rgba(139,195,74,1)',
+    ),
+    'GFT' =>
+    array (
+      'id' => 'ic_money_gift',
+      'color_map' => 'g3:#ef5350|4:#e53935',
+      'fx_sticker' => 'true',
+      'fx_sticker_width' => 33,
+      'fx_sticker_color' => '#ffffff',
+      'fx_sticker_shadow_color' => '#ef5350',
+      'fx_sticker_shadow_size' => '2',
+      'preview_color' => 'rgba(239,235,233,1)',
+    ),
+    'CLN' =>
+    array (
+      'id' => 'ic_other_brush',
+      'color_map' => 'g3:#f50057|4:#c51162',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'perfect-circle',
+      'bg_shape_color' => '#eceff1',
+      'bg_shape_outline_color' => '#ffffff',
+      'bg_shape_outline' => 3,
+      'bg_shape_size' => 80,
+      'image_transform' => '120,5,5',
+    ),
+    'PIN' =>
+    array (
+      'id' => 'ic_data_pin-2',
+      'color_map' => 'g2:#e1f5fe|3:#ff5722',
+      'bg_shape' => 'true',
+      'bg_shape_variant' => 'blob',
+      'bg_shape_blob_comp' => '4',
+      'bg_shape_color' => '#e1f5fe',
+      'bg_shape_dst' => 'true',
+      'bg_shape_dst_seed' => 5,
+      'bg_shape_dst_lvl' => '3',
+      'overlay' => '1',
+      'preview_color' => 'rgba(255,255,255,1)',
+    ),
+    'SGR' =>
+    array (
+      'id' => 'ic_other_bolt-nut',
+      'color_map' => 'g3;4:#607d8b',
+      'fx_doodle' => 'true',
+      'fx_doodle_color' => '#607d8b',
+      'image_compos' => '1',
+      'image_transform' => '110,0,0',
+      'preview_color' => 'rgba(236,239,241,1)',
+    ),
+    'REC' =>
+    array (
+      'animation' => 'each_zoom_spring',
+      'fx_btm_shadow' => 'true',
+      'overlay' => '2',
+      'image_transform' => '110,0,7',
+      'preview_color' => 'rgba(236,239,241,1)',
+      'id' => 'ic_data_doc-rocket',
+    ),
+  ),
+  'REDSET' =>
+  array (
+    'RED01' =>
+    array (
+      'id' => 'ic_money_payment-methods-1',
+      'animation' => 'imagebox_rubber_band',
+      'fx_btm_shadow' => 'true',
+      'fx_btm_shadow_color' => 'rgba(0, 0, 0, 0.1)',
+      'fx_sparks' => 'true',
+      'fx_sparks_variant' => '3',
+      'fx_sparks_anim' => 'true',
+      'preview_color' => 'rgba(51,51,51,1)',
+    ),
+    'RED02' =>
+    array (
+      'id' => 'ic_time_award-five-years',
+      'animation' => 'imagebox_rubber_band',
+      'fx_btm_shadow' => 'true',
+      'fx_btm_shadow_color' => 'rgba(0, 0, 0, 0.1)',
+      'fx_sparks' => 'true',
+      'fx_sparks_variant' => '2',
+      'fx_sparks_anim' => 'true',
+      'preview_color' => 'rgba(51,51,51,1)',
+    ),
+    'RED03' =>
+    array (
+      'id' => 'ic_communication_outpost',
+      'animation' => 'imagebox_rubber_band',
+      'fx_btm_shadow' => 'true',
+      'fx_btm_shadow_color' => 'rgba(0, 0, 0, 0.1)',
+      'fx_sparks' => 'true',
+      'fx_sparks_variant' => '6',
+      'fx_sparks_anim' => 'true',
+      'image_transform' => '102,0,-4',
+      'preview_color' => 'rgba(51,51,51,1)',
+    ),
+    'RED04' =>
+    array (
+      'id' => 'ic_communication_delivery-1',
+      'animation' => 'imagebox_rubber_band',
+      'fx_btm_shadow' => 'true',
+      'fx_btm_shadow_color' => 'rgba(0, 0, 0, 0.1)',
+      'fx_sparks' => 'true',
+      'fx_sparks_variant' => '4',
+      'fx_sparks_anim' => 'true',
+      'image_transform' => '100,0,-4',
+      'preview_color' => 'rgba(51,51,51,1)',
+    ),
+  ),
+);
+
+?>

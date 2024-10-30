@@ -1,0 +1,481 @@
+/*  @license CC BY:  Artemy Krylov  https://svgsprite.com  */
+/* BASE */
+
+.icons_factory_anim .icons_factory_shape{
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+.icons_factory_wrapper {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.icons_factory_wrapper svg {
+    width: 100%;
+    height: 100%;
+}
+
+.icons_factory_wrapper .icons_factory_fallback_png {
+    display: none;
+}
+
+.no-svg .icons_factory_wrapper .icons_factory_fallback_png {
+    display: block;
+    width: inherit;
+}
+
+.icons_factory_wrapper.icons_factory_align_left {
+    text-align: left;
+    margin: 0;
+}
+
+.icons_factory_wrapper.icons_factory_align_center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.icons_factory_wrapper.icons_factory_align_right {
+    text-align: right;
+    float: right;
+}
+
+
+/* ANIMATION */
+
+
+/* Animation - "Zoom in" for an imagebox */
+
+.icons_factory_anim.icons_factory_anim_imagebox_zoom {
+    opacity: 0;
+    -webkit-transform: scale(0.33) rotate(-10deg);
+    transform: scale(0.33) rotate(-10deg);
+}
+
+.icons_factory_start_anim.icons_factory_anim_imagebox_zoom {
+    -webkit-animation: zoom_in_and_rotate 1s cubic-bezier(1, 0, 0.125, 1.33) both;
+    animation: zoom_in_and_rotate 1s cubic-bezier(1, 0, 0.125, 1.33) both;
+}
+
+@-webkit-keyframes zoom_in_and_rotate {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.33) rotate(-10deg);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes zoom_in_and_rotate {
+    from {
+        opacity: 0;
+        transform: scale(0.33) rotate(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+
+
+/* Animation - "Rubber band" for an Imagebox */
+
+.icons_factory_start_anim.icons_factory_anim_imagebox_rubber_band {
+    -webkit-animation: rubber_band 1s;
+    animation: rubber_band 1s;
+}
+
+@-webkit-keyframes rubber_band {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.1, 0.9, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.9, 1.1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.06, 0.92, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(.98, 1.02, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.02, .98, 1);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes rubber_band {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.1, 0.9, 1);
+    }
+    40% {
+        transform: scale3d(0.9, 1.1, 1);
+    }
+    50% {
+        transform: scale3d(1.06, 0.92, 1);
+    }
+    65% {
+        transform: scale3d(.98, 1.02, 1);
+    }
+    75% {
+        transform: scale3d(1.02, .98, 1);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+
+
+/* Animation - "Fade in up" for an Imagebox */
+
+.icons_factory_anim.icons_factory_anim_imagebox_fade_in_up {
+    opacity: 0;
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+}
+
+.icons_factory_start_anim.icons_factory_anim_imagebox_fade_in_up {
+    -webkit-animation: fade_in 1s linear both, slide_up 2s cubic-bezier(0.175, 0.885, 0.320, 1) both;
+    animation: fade_in 1s linear both, slide_up 2s cubic-bezier(0.175, 0.885, 0.320, 1) both;
+}
+
+@-webkit-keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide_up {
+    from {
+        -webkit-transform: translateY(30%);
+    }
+    to {
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes slide_up {
+    from {
+        transform: translateY(30%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Animation - "Zoom In" for each shape in an imagebox, one by one */
+
+.icons_factory_anim.icons_factory_anim_each_zoom .icons_factory_ag,
+.icons_factory_anim.icons_factory_anim_each_zoom .icons_factory_bg_shape,
+.icons_factory_anim.icons_factory_anim_each_zoom .icons_factory_cast_shadow,
+.icons_factory_anim.icons_factory_anim_each_zoom .icons_factory_fx_stroke {
+    opacity: 0;
+    -webkit-transform: scale(0.33);
+    transform: scale(0.33);
+}
+
+.icons_factory_start_anim.icons_factory_anim_each_zoom .icons_factory_ag,
+.icons_factory_start_anim.icons_factory_anim_each_zoom .icons_factory_bg_shape,
+.icons_factory_start_anim.icons_factory_anim_each_zoom .icons_factory_cast_shadow,
+.icons_factory_start_anim.icons_factory_anim_each_zoom .icons_factory_fx_stroke {
+    -webkit-animation: zoom_in .3s ease-out both, fade_in .2s linear both;
+    animation: zoom_in .3s ease-out both, fade_in .2s linear both;
+}
+
+.icons_factory_anim_each_zoom .icons_factory_ag.icons_factory_ag_b {
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+}
+
+.icons_factory_anim_each_zoom .icons_factory_ag.icons_factory_ag_c {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+.icons_factory_anim_each_zoom .icons_factory_ag.icons_factory_ag_d {
+    -webkit-animation-delay: .45s;
+    animation-delay: .45s;
+}
+
+.icons_factory_anim_each_zoom .icons_factory_ag.icons_factory_ag_e {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+.icons_factory_anim_each_zoom .icons_factory_ag.icons_factory_ag_f {
+    -webkit-animation-delay: .75s;
+    animation-delay: .75s;
+}
+
+.icons_factory_anim_each_zoom .icons_factory_ag.icons_factory_ag_g {
+    -webkit-animation-delay: .9s;
+    animation-delay: .9s;
+}
+
+.icons_factory_anim_each_zoom .icons_factory_ag.icons_factory_ag_h {
+    -webkit-animation-delay: 1.05s;
+    animation-delay: 1.05s;
+}
+
+
+@-webkit-keyframes zoom_in {
+    from {
+        -webkit-transform: scale(0.33);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes zoom_in {
+    from {
+        transform: scale(0.33);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Animation - "Spring Zoom In" for each shape in an imagebox, one by one */
+
+.icons_factory_anim.icons_factory_anim_each_zoom_spring .icons_factory_ag,
+.icons_factory_anim.icons_factory_anim_each_zoom_spring .icons_factory_bg_shape,
+.icons_factory_anim.icons_factory_anim_each_zoom_spring .icons_factory_cast_shadow,
+.icons_factory_anim.icons_factory_anim_each_zoom_spring .icons_factory_fx_stroke {
+    opacity: 0;
+    -webkit-transform: scale(0.33);
+    transform: scale(0.33);
+}
+
+.icons_factory_start_anim.icons_factory_anim_each_zoom_spring .icons_factory_ag,
+.icons_factory_start_anim.icons_factory_anim_each_zoom_spring .icons_factory_bg_shape,
+.icons_factory_start_anim.icons_factory_anim_each_zoom_spring .icons_factory_cast_shadow,
+.icons_factory_start_anim.icons_factory_anim_each_zoom_spring .icons_factory_fx_stroke {
+    -webkit-animation: spring_zoom_in 1.5s cubic-bezier(0.445,  0.050, 0.550, 0.950) both, fade_in .2s linear both;
+    animation: spring_zoom_in 1.5s cubic-bezier(0.445,  0.050, 0.550, 0.950) both, fade_in .2s linear both;
+}
+
+.icons_factory_anim_each_zoom_spring .icons_factory_ag.icons_factory_ag_b {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+.icons_factory_anim_each_zoom_spring .icons_factory_ag.icons_factory_ag_c {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+
+.icons_factory_anim_each_zoom_spring .icons_factory_ag.icons_factory_ag_d {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+.icons_factory_anim_each_zoom_spring .icons_factory_ag.icons_factory_ag_e {
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+}
+
+.icons_factory_anim_each_zoom_spring .icons_factory_ag.icons_factory_ag_f {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.icons_factory_anim_each_zoom_spring .icons_factory_ag.icons_factory_ag_g {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.icons_factory_anim_each_zoom_spring .icons_factory_ag.icons_factory_ag_h {
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+@-webkit-keyframes spring_zoom_in {
+    0%     {-webkit-transform: scale(0.33);}
+    11.33% {-webkit-transform: scale(1.1075);}
+    23.99% {-webkit-transform: scale(0.9637);}
+    36.66% {-webkit-transform: scale(1.0123);}
+    49.33% {-webkit-transform: scale(0.9959);}
+    62%    {-webkit-transform: scale(1.0014);}
+    74.66% {-webkit-transform: scale(0.9995);}
+    87.33% {-webkit-transform: scale(1.0002);}
+    100%   {-webkit-transform: scale(1);}
+}
+
+
+@keyframes spring_zoom_in {
+    0%     {transform: scale(0.33);}
+    11.33% {transform: scale(1.1075);}
+    23.99% {transform: scale(0.9637);}
+    36.66% {transform: scale(1.0123);}
+    49.33% {transform: scale(0.9959);}
+    62%    {transform: scale(1.0014);}
+    74.66% {transform: scale(0.9995);}
+    87.33% {transform: scale(1.0002);}
+    100%   {transform: scale(1);}
+}
+
+
+
+/* FX */
+
+
+/* Sparks */
+
+.icons_factory_sparks_animation .icons_factory_spark_shape {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-animation: glow 5s ease infinite;
+	animation: glow 5s ease infinite;
+	transform-box: fill-box;
+	transform-origin: 50% 50%;
+}
+
+.icons_factory_sparks_group_1 .icons_factory_spark:nth-child(2) .icons_factory_spark_shape {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+.icons_factory_sparks_group_1 .icons_factory_spark:nth-child(5) .icons_factory_spark_shape {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.icons_factory_sparks_group_1 .icons_factory_spark:nth-child(4) .icons_factory_spark_shape {
+    -webkit-animation-delay: 2.0s;
+    animation-delay: 2.0s;
+}
+
+.icons_factory_sparks_group_1 .icons_factory_spark:nth-child(3) .icons_factory_spark_shape {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.icons_factory_sparks_group_2 .icons_factory_spark:nth-child(4) .icons_factory_spark_shape {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.icons_factory_sparks_group_2 .icons_factory_spark:nth-child(3) .icons_factory_spark_shape {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.icons_factory_sparks_group_2 .icons_factory_spark:nth-child(2) .icons_factory_spark_shape {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.icons_factory_sparks_group_2 .icons_factory_spark:nth-child(5) .icons_factory_spark_shape {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.icons_factory_sparks_group_3 .icons_factory_spark:nth-child(5) .icons_factory_spark_shape {
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+}
+
+.icons_factory_sparks_group_3 .icons_factory_spark:nth-child(2) .icons_factory_spark_shape {
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+
+.icons_factory_sparks_group_3 .icons_factory_spark:nth-child(4) .icons_factory_spark_shape {
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+}
+
+.icons_factory_sparks_group_3 .icons_factory_spark:nth-child(3) .icons_factory_spark_shape {
+    -webkit-animation-delay: 3.8s;
+    animation-delay: 3.8s;
+}
+
+.icons_factory_sparks_group_4 .icons_factory_spark:nth-child(2) .icons_factory_spark_shape {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+.icons_factory_sparks_group_4 .icons_factory_spark:nth-child(3) .icons_factory_spark_shape {
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+
+.icons_factory_sparks_group_4 .icons_factory_spark:nth-child(5) .icons_factory_spark_shape {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.icons_factory_sparks_group_4 .icons_factory_spark:nth-child(4) .icons_factory_spark_shape {
+    -webkit-animation-delay: 4.5s;
+    animation-delay: 4.5s;
+}
+
+
+@-webkit-keyframes glow {
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(1);
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+}
+
+@keyframes glow {
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+}
+

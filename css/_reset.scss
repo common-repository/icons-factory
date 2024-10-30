@@ -1,0 +1,26 @@
+.#{$slug}main_container{
+    form, 
+    input, 
+    input[type=text],
+    input[type=checkbox],
+    input[type=radio],
+    input[type=submit],
+    button,
+    select, 
+    textarea,
+    label,
+    img,
+    span,
+    b,
+    p,
+    h1, 
+    h2, 
+    h3 {
+        position: relative;
+        font: inherit;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        cursor: default;
+    }
+}
